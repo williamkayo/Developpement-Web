@@ -1,10 +1,10 @@
 function getLocation(){
-
-}
-window.onload = getLocation;
-if (Modernizr.geolocation ) {
+	if (Modernizr.geolocation ) {
 	navigator.geolocation.getCurrentPosition (geoSuccess, geoError);
 }
+}
+window.onload = getLocation;
+
 function geoSuccess (positionInfo) {
 	document.getElementById("longitude").innerHTML = positionInfo.coords.longitude;
 	document.getElementById("latitude").innerHTML = positionInfo.coords.latitude;
