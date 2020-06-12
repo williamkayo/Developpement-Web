@@ -1,0 +1,25 @@
+h1 {font-size: 18pt;} /*spécifie la taille de la fonte à 18pt*/
+
+ 	label{ 
+ 		width: 100px;  /* largeur de 100 pixels*/
+		text-align: right;  /* Alignement du texte à droite*/
+		display: inline-block;  /*Grille de boites s'adaptant à la largeur du navigateur*/
+		vertical-align: baseline;  /*alignement vertical avec la ligne de base du parent*/
+ 	}
+ 	
+@media screen and ( max-width: 480px ) { /*largeur d'écran inférieure à 480px*/
+
+ 	label{
+		display: block; /*Affichage sous forme de bloc*/
+ 		
+ 	}
+ 	label.inline {
+ 		display:inline; /*Affichage sur une ligne de texte sans provoquer de retour à la ligne*/
+ 	}
+
+ }
+
+
+
+
+
